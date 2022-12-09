@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - prometheus # enables /actuator/prometheus endpoint
+          - health # enables /actuator/health endpoint
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
